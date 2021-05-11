@@ -104,7 +104,7 @@ def numeros(numero1, numero2):
         print("Números iguais")
     else:
         min = numero1
-        print("O menor número é:: ", min)
+        print("O menor número é: ", min)
 
 
 n1 = float(input("Digite o primeiro número: "))
