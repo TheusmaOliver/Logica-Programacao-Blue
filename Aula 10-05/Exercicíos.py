@@ -1,4 +1,7 @@
 # Exercicío 1
+from datetime import timezone, datetime, date
+
+
 def soma(a, b, c):
     print("A soma dos três números é: ", a+b+c)
 
@@ -111,3 +114,5 @@ n1 = float(input("Digite o primeiro número: "))
 n2 = float(input("Digite o segundo número: "))
 
 numeros(n1, n2)
+
+# Desafio
