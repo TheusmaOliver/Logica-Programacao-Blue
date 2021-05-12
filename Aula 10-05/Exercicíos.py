@@ -1,8 +1,6 @@
 # Exercicío 1
-from datetime import timezone, datetime, date
 
-
-def soma(a, b, c):
+'''def soma(a, b, c):
     print("A soma dos três números é: ", a+b+c)
 
 
@@ -31,14 +29,14 @@ verifica(n1)
 
 
 def somaImposto(taxaImposto, custo):
-    resultado = custo + (custo * taxaImposto / 100)
+    resultado = (taxaImposto * custo / 100) + custo
     return resultado
 
 
-n1 = float(input("Digite o custo do item: "))
-n2 = float(input("Digite o imposto(apenas o número): "))
+custo = float(input("Digite o custo do item: "))
+imposto = float(input("Digite o imposto(apenas o número): "))
 
-resultado = somaImposto(n2, n1)
+resultado = somaImposto(imposto, custo)
 print("O preço com impostos é: ", resultado)
 
 # Exercicío 4
@@ -110,9 +108,45 @@ def numeros(numero1, numero2):
         print("O menor número é: ", min)
 
 
-n1 = float(input("Digite o primeiro número: "))
-n2 = float(input("Digite o segundo número: "))
+numero1 = float(input("Digite o primeiro número: "))
+numero2 = float(input("Digite o segundo número: "))
 
-numeros(n1, n2)
+numeros(numero1, numero2)
 
-# Desafio
+# Desafio'''
+
+
+def calendar(date):
+
+    day = int(date[0:2])
+    indexMonth = int(date[3:5])
+    year = int(date[6:10])
+
+    month = [
+        '', 'janeiro', 'fevereiro',
+        'março', 'abril',
+        'maio', 'junho',
+        'julho', 'agosto',
+        'setembro', 'outubro',
+        'novembro', 'dezembro'
+    ]
+
+    # Tratamento de erros
+    if (len(date) < 10 or len(date) > 10):
+        print('Null')
+    elif (date[2] != '/' or date[5] != '/'):
+        print('Null')
+    elif (indexMonth < 1 or indexMonth > 12):
+        print('Null')
+
+    # Ano bissexto
+    if (year % 4 == 0 and year % 100 != 100 or year % 400 == 0):
+        print(f'{day} de {month[indexMonth]} de {year} é uma data bissexta')
+    else:
+        print(
+            f'{day} de {month[indexMonth]} de {year} não é uma data bissexta')
+
+
+date = input('Escreva uma data no formato (dia/mês/ano): ')
+
+calendar(date)
