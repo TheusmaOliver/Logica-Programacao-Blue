@@ -1,10 +1,10 @@
 # Exercicío 8
 
-r1 = input("Telefonou para a vítima? ")
-r2 = input("Esteve no local do crime? ")
-r3 = input("Mora perto da vítima? ")
-r4 = input("Devia para a vítima? ")
-r5 = input("Já trabalhou com a vítima? ")
+r1 = input("Telefonou para a vítima[sim/nao]? ")
+r2 = input("Esteve no local do crime[sim/nao]? ")
+r3 = input("Mora perto da vítima[sim/nao]? ")
+r4 = input("Devia para a vítima[sim/nao]? ")
+r5 = input("Já trabalhou com a vítima[sim/nao]? ")
 
 respostas = [r1, r2, r3, r4, r5]
 
