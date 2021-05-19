@@ -1,3 +1,5 @@
+# Forma 1
+
 dict = {1: 1, 4: 4, 5: 5, 6: 6, 7: 7, 9: 9}
 
 for i, v in dict.items():
@@ -5,6 +7,8 @@ for i, v in dict.items():
 
 
 print(dict)
+
+# Forma 2
 
 chaves = [1, 4, 5, 6, 7, 9]
 dict2 = {}

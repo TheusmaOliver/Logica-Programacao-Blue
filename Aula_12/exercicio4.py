@@ -13,7 +13,7 @@ print('='*40)
 resultado = {}
 for cont in jogadores:
     numeros = random.randint(1, 6)
-    print(f'O jogador {cont} tirou o numero {numeros}')
+    print(f'O jogador {cont} tirou {numeros} no dado')
     time.sleep(2)
     resultado[cont] = numeros
 print()

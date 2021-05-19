@@ -1,8 +1,9 @@
 opc = 0
 alunos = {}
 situacao = {}
+qtd = int(input("Quantos alunos? "))
 
-while opc < 3:
+while opc < qtd:
     opc += 1
     nome = input("Digite seu nome: ")
     media = float(input("Digite sua media: "))
@@ -16,7 +17,8 @@ while opc < 3:
         situacao[nome] = 'Recuperação'
     else:
         situacao[nome] = 'Reprovado'
-print()
+
+print('-='*30)
 
 for nome, media in alunos.items():
     print(f'{nome} - {media} - {situacao[nome]}')
