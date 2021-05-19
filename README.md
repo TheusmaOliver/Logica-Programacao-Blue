@@ -1,2 +1,2 @@
 # Projetos-Python-Blue-Vscode
-Aqui irei adicionar meus projetos feito no vscode
+Aqui irei adicionar meus projetos feito em Python no vscode
