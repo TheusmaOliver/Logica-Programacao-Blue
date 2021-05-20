@@ -7,8 +7,7 @@ estoque = {'Pao': [10, 0.50],
 
 valorTotal = 0
 totalProdutos = 0
-produtos = []
-nome_produto = []
+
 while True:
     produto = input("Qual produto você deseja? ")
 
@@ -29,9 +28,6 @@ while True:
             valorTotal += resultado
             totalProdutos += qtd
             estoque[produto][0] -= qtd
-            produtos = qtd
-            nome_produto = produto
-
     else:
         print('=====Sem Estoque=====')
 
@@ -40,6 +36,7 @@ while True:
         break
     else:
         continue
+
 
 print(
     f'Você comprou {totalProdutos} produtos, o valor total foi R$ {valorTotal}')

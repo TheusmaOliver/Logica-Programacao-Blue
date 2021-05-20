@@ -20,8 +20,10 @@ while True:
     print()
     if input("Deseja cadastrar mais um jogador? ") in "Nn":
         break
+
     else:
+
         continue
 print()
 for key, value in jogo.items():
-    print(f"O jogador {key} fez {totalGols} gols no campeonato.")
+    print(f"O jogador {key} fez {sum(value)} gols no campeonato.")

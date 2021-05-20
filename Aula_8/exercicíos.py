@@ -1,5 +1,5 @@
 # Exercicío 1
-'''frase = input("Digite uma frase: ").lower()
+frase = input("Digite uma frase: ").lower()
 vogais = 0
 
 for letra in frase:
@@ -15,7 +15,7 @@ n = 10
 
 for divisor in range(1, n+1):
     if n % divisor == 0:
-        print(divisor)'''
+        print(divisor)
 
 # Exercicío 3
 

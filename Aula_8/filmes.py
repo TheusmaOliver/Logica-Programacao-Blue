@@ -5,6 +5,7 @@ print(filmes)
 print()
 filmes_novos = ['Histórias Cruzadas', 'Esqueceram de mim', 'Desventuras em Série', 'Poderoso Chefão',
                 'De volta para o futuro', 'Ben Hur']
+
 filmes.extend(filmes_novos)
 
 print(filmes)
