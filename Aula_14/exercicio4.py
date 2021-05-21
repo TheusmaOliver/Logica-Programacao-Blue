@@ -1,4 +1,3 @@
-
 def transform(date):
     global indexMonth
 

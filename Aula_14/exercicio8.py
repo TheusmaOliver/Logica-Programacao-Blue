@@ -18,11 +18,11 @@ if carteira != 0:
     anosTrabalhados = int(input("Informe quantos anos você trabalhou: "))
     salario = float(input("Digite seu salário: "))
 
-    aposentadoria = (35 - anosTrabalhados)
+    aposentadoria = ((35 - anosTrabalhados) + idade)
 
     dados['Ano do contrato'] = anoContratacao
     dados['Salário'] = salario
-    dados['Aposentadoria'] = f'Falta {aposentadoria} anos para aposentar.'
+    dados['Aposentadoria'] = f'{aposentadoria}'
 else:
     print("Sem carteira de trabalho")
 

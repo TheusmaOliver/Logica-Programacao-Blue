@@ -17,6 +17,7 @@ def retornaFrase(frase):
 
 
 frase = input("Digite uma frase: ").lower()
-
+print()
 print(f'O resultado da frase "{retornaFrase(frase)}".')
+print()
 print(f'Foram retiradas {verificaVogais(frase)} letras.')

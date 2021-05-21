@@ -1,9 +1,9 @@
 from random import randint
 
-print("Seja bem vindo ! vamos iniciar seu cadastro abaixo :")
+print("Seja bem vindo ! vamos iniciar seu cadastro abaixo ")
 
-usuario = input("informe seu nome de usuário para cadastro :")
-senha = input("Informe uma senha para cadastro :")
+usuario = input("informe seu nome de usuário para cadastro:")
+senha = input("Informe uma senha para cadastro:")
 
 while usuario == senha:
     print("Sua senha deve ser diferente do login: ")
@@ -12,11 +12,17 @@ while usuario == senha:
 print("Cadastro aprovado")
 
 login = input("informe o seu nome de usuário: ")
-sen = input("Informe a sua senha : ")
+
+while login != usuario:
+    print("Login incorreto, tente novamente!")
+    login = input("Informe o seu nome de usuário: ")
+
+sen = input("Informe a sua senha: ")
+
 
 while sen != senha:
-    print("Senha incorreta, tente novamente : ")
-    sen = input("Informe a sua senha : ")
+    print("Senha incorreta, tente novamente: ")
+    sen = input("Informe a sua senha: ")
 
 print("Bem vindo ao jogo da adivinhação! será que você consegue adivinhar o número que eu estou pensando ?!")
 computador = randint(0, 10)

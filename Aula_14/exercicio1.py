@@ -30,6 +30,9 @@ else:
 
 if mult > 40:
     div = mult / divInt
-    print(f"O resultado da divisão com a multiplicação maior que 40 é {div}")
+    print(
+        f"O resultado da divisão com a multiplicação maior que 40 é {div:.2f}")
+elif divInt == 0:
+    print("Não pode dividir por 0.")
 else:
     print("A multiplicação não foi maior que 40!")

@@ -6,7 +6,7 @@ for cont in range(7):
     numeros += [numero]
 print()
 
-print(numeros)
+
 listaNumeros = []
 impares = []
 
